@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <title>Form Pertanyaan</title>
+    <title>Hai,</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -569,14 +569,14 @@
             <button
               class="btn"
               style="margin-bottom: 6px; height: 40px"
-              onclick="nextStep('step4', 'step5')">
+              onclick="setTimeout(function() { nextStep('step4', 'step5'); }, 1000)">
               Let's Go!!!
             </button>
             <button
               id="sorry"
               style="height: 40px"
               class="btn"
-              onclick="nextStep('step4', 'step5')"></button>
+              onclick="setTimeout(function() { nextStep('step4', 'step5'); }, 1000)"></button>
           </div>
         </div>
       </div>
@@ -676,12 +676,12 @@
 
       var words = [
         "Oh hey,",
-        // "btw My friend just bought some Dufan ticket's to me",
-        // "cause he had an urgent job to do.",
-        // "But the problem is...",
-        // "i don't have anyone to go with",
-        // "and and AND i don't fucking know what i'm talking about 😖.",
-        // "I just wanna date with you. so, are you in?",
+        "btw My friend just bought some Dufan ticket's to me",
+        "cause he had an urgent job to do.",
+        "But the problem is...",
+        "i don't have anyone to go with",
+        "and and AND i don't fucking know what i'm talking about 😖.",
+        "I just wanna date with you. so, are you in?",
       ]
       var part,
         i = 0,
