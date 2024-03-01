@@ -45,7 +45,7 @@ function nextStep(currentStepId, nextStepId, button) {
     );
 
     bot
-      .sendMessage("Hello world!", null, null, true)
+      .sendMessage(answerAll, null, null, true)
       .then((res) => {
         console.log("Success!", res);
       })
