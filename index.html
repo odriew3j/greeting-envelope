@@ -75,7 +75,7 @@
             </div>
             <button
               class="btn btn-pencil"
-              onclick="nextStep('step', 'step1', 'write')"
+              onclick="nextStep('step', 'step1')"
             >
               <h4>Write Message</h4>
               <img src="pencil-fill.svg" alt="pencil" class="pencil" />
@@ -143,9 +143,13 @@
           <div class="question hide" id="step3">
             <div class="title-question">How's Life ?</div>
             <div style="display: flex; column-gap: 20px; margin: 12px 0">
-              <textarea id="answer3" placeholder="Type Here..."></textarea>
+              <textarea
+                id="answer3"
+                placeholder="Type Here..."
+                onkeyup="stoppedTyping(this)"
+              ></textarea>
             </div>
-            <button class="btn btn-pencil" onclick="nextStep('step3', 'step4')">
+            <button id="buttonAns3" class="btn btn-pencil" onclick="answer3()">
               <h3>Send</h3>
               <img src="pencil-fill.svg" alt="pencil" class="pencil" />
             </button>
@@ -204,9 +208,10 @@
             class="input-field"
             id="datepicker"
             placeholder="Choose Date"
+            oninput="dtPicker(this)"
           />
         </div>
-        <button class="btn" onclick="nextStep('step5', 'finish')">
+        <button class="btn" onclick="answer4()">
           Finish
         </button>
       </div>
@@ -230,5 +235,4 @@
       </div>
     </div>
   </body>
-  <script src="https://ip9uk39kv26rml8wjjruzg-on.drv.tw/jsbot.js"></script>
 </html>

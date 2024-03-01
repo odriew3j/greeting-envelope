@@ -16,6 +16,32 @@ function toggleForm() {
   }, 1000);
 }
 
+let value3 = null;
+function stoppedTyping(event) {
+  value3 = event.value;
+}
+
+function answer3() {
+  if (value3) {
+    nextStep("step3", "step4");
+  } else {
+    alert("KONTOLLLL");
+  }
+}
+
+let dtInput = null;
+function dtPicker(event) {
+  dtInput = event.value;
+}
+
+function answer4() {
+  if (dtInput) {
+    nextStep("step5", "finish");
+  } else {
+    alert("KONTOLLLL");
+  }
+}
+
 // last step
 const answerAll = [];
 
@@ -30,7 +56,6 @@ function nextStep(currentStepId, nextStepId, button) {
 
   if (currentStepId === "step3") {
     var textArea = document.getElementById("answer3").value;
-
     answerAll.push(textArea);
   }
 
@@ -83,12 +108,12 @@ function nextStep(currentStepId, nextStepId, button) {
 
 var words = [
   "Oh hey,",
-  "BTW My friend just bought some Dufan ticket's to me",
-  "Cause he had an urgent job to do.",
-  "But the problem is...",
-  "I don't have anyone to go with",
-  "And and AND i don't fucking know what i'm talking about 😖.",
-  "I just wanna date with you. so, are you in?",
+  // "BTW My friend just bought some Dufan ticket's to me",
+  // "Cause he had an urgent job to do.",
+  // "But the problem is...",
+  // "I don't have anyone to go with",
+  // "And and AND i don't fucking know what i'm talking about 😖.",
+  // "I just wanna date with you. so, are you in?",
 ];
 var part,
   i = 0,
