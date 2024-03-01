@@ -108,12 +108,12 @@ function nextStep(currentStepId, nextStepId, button) {
 
 var words = [
   "Oh hey,",
-  // "BTW My friend just bought some Dufan ticket's to me",
-  // "Cause he had an urgent job to do.",
-  // "But the problem is...",
-  // "I don't have anyone to go with",
-  // "And and AND i don't fucking know what i'm talking about 😖.",
-  // "I just wanna date with you. so, are you in?",
+  "BTW My friend just bought some Dufan ticket's to me",
+  "Cause he had an urgent job to do.",
+  "But the problem is...",
+  "I don't have anyone to go with",
+  "And and AND i don't fucking know what i'm talking about 😖.",
+  "I just wanna date with you. so, are you in?",
 ];
 var part,
   i = 0,
