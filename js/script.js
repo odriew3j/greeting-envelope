@@ -145,20 +145,9 @@ function displayText() {
 }
 
 function SorryBtn() {
-  var btnSorry = document.querySelector("#sorry");
+  var btnSorry = document.getElementById("sorry");
+  var ofcSorry = document.getElementById("ofc");
 
-  btnSorry.textContent = "OFC! WHY NOT!";
-  if (btnSorry.textContent.trim() === "OFC! WHY NOT!") {
-    setTimeout(function () {
-      nextStep("step4", "step5");
-    }, 1000);
-  }
-  // if (btnSorry.textContent.trim() === "Sorry, i can`t") {
-  //   btnSorry.textContent = "OFC! WHY NOT!";
-  // }
-  // else {
-  //   setTimeout(function () {
-  //     nextStep("step4", "step5");
-  //   }, 1000);
-  // }
+  btnSorry.style.display = "none";
+  ofcSorry.style.display = "block";
 }

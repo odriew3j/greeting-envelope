@@ -73,10 +73,7 @@
 
               <p>Take care, Ce es</p>
             </div>
-            <button
-              class="btn btn-pencil"
-              onclick="nextStep('step', 'step1')"
-            >
+            <button class="btn btn-pencil" onclick="nextStep('step', 'step1')">
               <h4>Write Message</h4>
               <img src="pencil-fill.svg" alt="pencil" class="pencil" />
             </button>
@@ -196,6 +193,14 @@
             >
               Sorry, i can't
             </button>
+            <button
+              id="ofc"
+              style="height: 40px; display: none"
+              class="btn"
+              onclick="nextStep('step4', 'step5', 'OFC! WHY NOT!')"
+            >
+              OFC! WHY NOT!
+            </button>
           </div>
         </div>
       </div>
@@ -211,9 +216,7 @@
             oninput="dtPicker(this)"
           />
         </div>
-        <button class="btn" onclick="answer4()">
-          Finish
-        </button>
+        <button class="btn" onclick="answer4()">Finish</button>
       </div>
 
       <div class="question hide" id="finish">
